@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+
+	id="WebApp_ID" version="3.0">
+
+	<display-name>day02_servlet01</display-name>
+
+	<welcome-file-list>
+
+		<welcome-file>index.html</welcome-file>
+
+		<welcome-file>index.htm</welcome-file>
+
+		<welcome-file>index.jsp</welcome-file>
+
+		<welcome-file>default.html</welcome-file>
+
+		<welcome-file>default.htm</welcome-file>
+
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>insert</servlet-name>
+		<servlet-class>library.servlet.SignUpServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insert</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>signin</servlet-name>
+		<servlet-class>library.servlet.SignInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>signin</servlet-name>
+		<url-pattern>/signin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>booklist</servlet-name>
+		<servlet-class>library.servlet.ReadBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>booklist</servlet-name>
+		<url-pattern>/booklist</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>mybooklist</servlet-name>
+		<servlet-class>library.servlet.ReadMyBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mybooklist</servlet-name>
+		<url-pattern>/mybooklist</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>availbooklist</servlet-name>
+		<servlet-class>library.servlet.ReadRentAvailBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>availbooklist</servlet-name>
+		<url-pattern>/availbooklist</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>popularbooklist</servlet-name>
+		<servlet-class>library.servlet.ReadPopularBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>popularbooklist</servlet-name>
+		<url-pattern>/popularbooklist</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>recentbooklist</servlet-name>
+		<servlet-class>library.servlet.ReadRecentBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>recentbooklist</servlet-name>
+		<url-pattern>/recentbooklist</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>searchTitle</servlet-name>
+		<servlet-class>library.servlet.BookSearchListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>searchTitle</servlet-name>
+		<url-pattern>/searchTitle</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>organize</servlet-name>
+		<servlet-class>library.servlet.BookOrganizeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>organize</servlet-name>
+		<url-pattern>/organize</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>bookSearch</servlet-name>
+		<servlet-class>library.servlet.BookSearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookSearch</servlet-name>
+		<url-pattern>/bookSearch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>bookRent</servlet-name>
+		<servlet-class>library.servlet.RentBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookRent</servlet-name>
+		<url-pattern>/bookRent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>bookReturn</servlet-name>
+		<servlet-class>library.servlet.ReturnBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookReturn</servlet-name>
+		<url-pattern>/bookReturn</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>bookInsert</servlet-name>
+		<servlet-class>library.servlet.BookInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>bookInsert</servlet-name>
+		<url-pattern>/BookInsert</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>list</servlet-name>
+		<servlet-class>library.servlet.ListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>list</servlet-name>
+		<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+
